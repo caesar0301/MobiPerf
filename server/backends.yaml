@@ -1,5 +1,0 @@
-backends:
-- name: anonymization
-  class: B4
-  start: /about
-  options: dynamic

@@ -1,0 +1,19 @@
+HOW TO USE
+-----------
+
+export ANDROID_NDK_ROOT=/path/to/android/ndk/folder
+
+
+cp -R libpcap-1.1.1 $ANDROID_NDK_ROOT/external/
+cp -P tcpdump-4.1.1 ../jni/
+
+Code review:
+ARO developer changed/created files in libpcap and tcpdump MAINLY:
+
+tcpdump.c
+user_input.c .h
+socket_pro.c .h
+cpu_usage.c .h
+socket_server.c .h
+
+We disabled user input capturer.

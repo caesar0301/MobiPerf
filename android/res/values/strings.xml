@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">MobiPerf</string>
+    <string name="app_name">Omniperf</string>
     <string name="user_agent">Linux; Android</string>
     <string name="default_user_agent">"MobiPerf-2.0 (Linux; Android)"</string>
     <string name="ping_executable">ping</string>
     <string name="ping6_executable">ping6</string>
     <string name="serverUrl">https://openmobiledata.appspot.com</string>
     <string name="anonymousServerUrl">https://openmobiledata.appspot.com/anonymous</string>
-    <string name="testServerUrl"></string>
+    <string name="testServerUrl">https://openmobiledata.appspot.com/anonymous</string>
     <string name="menuQuit">Quit</string>
     <string name="menumPause">Pause</string>
-    <string name="pauseMessage">MobiPerf is paused.</string>
+    <string name="pauseMessage">Omniperf is paused.</string>
     <string name="menuResume">Resume</string>
-    <string name="resumeMessage">MobiPerf is running.</string>
+    <string name="resumeMessage">Omniperf is running.</string>
     <string name="menuSettings">Settings</string>
     <string name="menuAbout">About</string>
     <string name="menuLog">System Log</string>
@@ -31,8 +31,8 @@
     <string name="batteryMinThresPrefKey">KEY_BATTERY_THRES</string>
     <string name="startOnBootPrefKey">KEY_START_ON_BOOT</string>
     <string name="accountPrefKey">PREF_KEY_ACCOUNT</string>
-    <string name="notificationSchedulerStarted">MobiPerf service has started</string>
-    <string name="notificationServiceRunning">MobiPerf service is running</string>
+    <string name="notificationSchedulerStarted">Omniperf service has started</string>
+    <string name="notificationServiceRunning">Omniperf service is running</string>
     <string name="userMeasurementSuccessToast">Measurement is running. Results will show up shortly.</string>
     <string name="userMeasurementFailureToast">The scheduler is busy, please run the measurement later</string>
     <string name="userMeasurementBusySchedulerToast">The scheduler is busy, your measurement will start shortly</string>
@@ -43,14 +43,33 @@
     <string name="invalidBatteryToast">Invalid setting! Please choose a battery level between 0 and 100 percent</string>
     <string name="menuInitializationExceptionToast">Exception occurs during menu initialization.</string>
     <string name="powerThreasholdReachedMsg">Measurement paused - below battery threshold</string>
-    <string name="terms">MobiPerf is a useful tool that collects network measurement results for academic research. Please see http://mobiperf.com/privacy for more details. If you agree that we can collect such information, click agree. On the account selection screen, you will have the option to submit results anonymously. If you do not agree, the application will exit.</string>
+    <string name="terms">Omniperf is a useful tool that collects network measurement results for academic research. If you do not agree, the application will exit.</string>
     <string name="aboutTitle">About</string>
-    <string name="aboutText">MobiPerf is an open source application for measuring network performance on mobile platforms. You can measure your network\'s throughput and latency, as well as other useful network metrics. MobiPerf also performs measurements at regular intervals in the background.\n\nThe privacy policy and EULA can be found at http://www.mobiperf.com/privacy </string>
-    <string name="aboutContact">\nHomepage:\nhttp://www.mobiperf.com\n\nCode repository:\nhttps://github.com/Mobiperf/MobiPerf\n\nEmail:\nmobiperf@googlegroups.com</string>
-    <string name="selectedString">is selected for authenticating with MobiPerf server.</string>
+    <string name="aboutText">Omniperf is an open source application for measuring network performance on mobile platforms. You can measure your network\'s throughput and latency, as well as other useful network metrics. Omniperf also performs measurements at regular intervals in the background.\n\nThe privacy policy and EULA can be found at http://omnilab.sjtu.edu.cn/omniperf. </string>
+    <string name="aboutContact">\nHomepage:\nhttp://omnilab.sjtu.edu.cn/omniperf\n</string>
+    <string name="selectedString">is selected for authenticating with Omniperf server.</string>
     <string name="defaultUser">Anonymous</string>
     <string name="TCPThroughputDirLabel">Direction:</string>
     <string name="TCPThroughputTargetHint">m-lab</string>
-    
-    
+    <string name="TCPTaskServerAddress">1.michigan.mlab1.nbo01.measurement-lab.org</string>
+    <string name="UDPTaskServerAddress">1.michigan.mlab1.nbo01.measurement-lab.org</string>
+    <!-- for collector activity  -->
+    <string name="passiveButtonStart">START</string>
+    <string name="passiveButtonStop">STOP</string>
+    <string name="passiveButtonHide">HIDE</string>
+    <string name="passiveButtonUpload">UPLOAD</string>
+    <string name="passiveTimerDefault">--:--:--</string>
+    <string name="errorMassageSDStorage">SD card is not available</string>
+    <string name="errorMassageAirPlaneMode">Air plane mode is enabled</string>
+    <string name="errorMassageNoNetworks">No networks available</string>
+    <string name="errorMassageNoRootAccess">You do not have root level access on this device.</string>
+    <string name="errorMassageTakeRootAccess">Omniperf gets root access</string>
+    <string name="errorMassageTcpdumpAlreadyRunning">Another tcpdump instance running, will you kill the process?</string>
+    <string name="dialogTitleNoRootAccess">Root Access</string>
+    <string name="dialogTitleTcpdumpInstanceRunning">Tcpdump Running</string>
+    <string name="dialogButtonOk">OK</string>
+    <string name="dialogButtonCancle">CANCLE</string>
+    <string name="dialogButtonQuit">QUIT</string>
+    <string name="dialogButtonKillManually">Kill now</string>
+    <string name="dialogButtonKillNoAction">Let it go</string>
 </resources>

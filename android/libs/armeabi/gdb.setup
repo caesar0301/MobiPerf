@@ -1,0 +1,2 @@
+set solib-search-path ./obj/local/armeabi
+directory /home/chenxm/tera/App/android-ndk/platforms/android-9/arch-arm/usr/include /home/chenxm/tera/App/android-ndk/external/libpcap-1.1.1 /home/chenxm/tera/App/android-ndk/sources/cxx-stl/system jni/missing

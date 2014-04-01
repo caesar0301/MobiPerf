@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical" >
+    <!-- upside down -->
+	<LinearLayout
+        android:id="@+id/collectorControls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" >
+        <Button
+            android:id="@+id/collectorButtonStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/passiveButtonStart" />
+        <Button
+            android:id="@+id/collectorButtonUpload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/passiveButtonUpload" />
+    </LinearLayout>
+    <Chronometer
+        android:id="@+id/chrono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/collectorTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="@string/passiveTimerDefault"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="35sp" />
+     <LinearLayout
+         android:id="@+id/collectorConsole"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_above="@id/collectorControls"
+         android:layout_below="@+id/collectorTimer"
+         android:layout_marginTop="20dp"
+         android:layout_marginBottom="20dp"
+         android:layout_marginLeft="10dp"
+         android:layout_marginRight="10dp"
+         android:orientation="vertical" >
+		<ScrollView
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginLeft="10dp"
+        	android:layout_marginRight="10dp">
+        	<TextView
+		        android:id="@+id/collectorConsoleText"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentTop="true"
+		        android:layout_centerHorizontal="true"
+		        android:textSize="15sp"
+		        android:text=""/>
+   		</ScrollView>
+    </LinearLayout>
+   
+</RelativeLayout>
